@@ -178,7 +178,7 @@
 //
 // let princesses:Cinderella[] = []
 //
-// for (let i = 1; i <= 10; i++) {
+// for (let i:number = 1; i <= 10; i++) {
 //     let randomFootSize:number = Math.floor(Math.random() * 10) + 34
 //     princesses.push(new Cinderella(
 //         `Cinderella${i}`,
@@ -194,8 +194,8 @@
 //     if (princess.footSize === prince.shoe) console.log(princess)
 // }
 //
-// function princessFinder(array:Cinderella[], callback) {
-//     let filterArr = [];
+// function princessFinder(array:Cinderella[], callback:any) {
+//     let filterArr:any[] = [];
 //     for (const item of array) {
 //         if (callback(item)) {
 //             filterArr.push(item);
@@ -211,7 +211,7 @@
 
 
 // Array.prototype.myForEach = function (item:any):void {
-//     for (let i = 0; i < this.length; i++) {
+//     for (let i:number = 0; i < this.length; i++) {
 //         item(this[i],i,this)
 //     }
 // }
@@ -222,9 +222,9 @@
 //     console.log(`item: ${item}, index: ${index}, array: ${array}`);
 // });
 //
-// Array.prototype.myFilter = function (item:any){
+// Array.prototype.myFilter = function (item:any):any{
 //     let filteredItems:any =[]
-//     for (let i = 0; i < this.length; i++) {
+//     for (let i:number = 0; i < this.length; i++) {
 //         if (item(this[i],i,this)){
 //             filteredItems.push(this[i])
 //         }
@@ -232,4 +232,4 @@
 //     return filteredItems
 // }
 //
-// console.log(numbers.myFilter((item:number, index:number, array:number[]) => item % 2 === 1 && index !== 2));
+// console.log(numbers.myFilter((item:number, index:number, array:number[]):boolean => item % 2 === 1 && index !== 2));

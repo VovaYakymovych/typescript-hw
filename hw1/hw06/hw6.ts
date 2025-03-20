@@ -67,10 +67,10 @@
 
 // let sortNums = (array:number[], direction:string):void => {
 //   if (direction === 'ascending') {
-//     console.log(array.sort((a:number, b:number) => a - b));
+//     console.log(array.sort((a:number, b:number):number => a - b));
 //   }
 //   else if (direction === 'descending') {
-//     console.log(array.sort((a:number, b:number) => b - a));
+//     console.log(array.sort((a:number, b:number):number => b - a));
 //   }
 // }
 //
@@ -81,13 +81,13 @@
 
 // ==================================task #yo06d74c1C======================================
 
-// type coursesAndDurationArrayType = {
+// type coursesAndDurationArrayType2 = {
 //     title:string
 //     monthDuration:number
 //     id?:number
 // }
 //
-// let coursesAndDurationArray:coursesAndDurationArrayType[] = [
+// let coursesAndDurationArray2:coursesAndDurationArrayType[] = [
 //   {title: 'JavaScript Complex', monthDuration: 5},
 //   {title: 'Java Complex', monthDuration: 6},
 //   {title: 'Python Complex', monthDuration: 6},
@@ -96,15 +96,15 @@
 //   {title: 'Frontend', monthDuration: 4}
 // ];
 //
-// let sortCourses:coursesAndDurationArrayType[] = coursesAndDurationArray.sort((a,b)=>{
+// let sortCourses:coursesAndDurationArrayType[] = coursesAndDurationArray2.sort((a,b)=>{
 //   return b.monthDuration - a.monthDuration
 // })
 // console.log(sortCourses)
 //
-// let filterCourses:coursesAndDurationArrayType[] = coursesAndDurationArray.filter(value => value.monthDuration>5)
+// let filterCourses:coursesAndDurationArrayType[] = coursesAndDurationArray2.filter(value => value.monthDuration>5)
 // console.log(filterCourses)
 //
-// let mappedCourses:coursesAndDurationArrayType[] = coursesAndDurationArray.map((value, index) => {
+// let mappedCourses:coursesAndDurationArrayType[] = coursesAndDurationArray2.map((value, index) => {
 //   return {id: index + 1, tittle: value.tittle, monthDuration: value.monthDuration}
 // })
 // console.log(mappedCourses)
@@ -244,7 +244,7 @@
 //     }
 // ];
 //
-// function courseFinder(array:coursesArrayType[], callback:any) {
+// function courseFinder(array:coursesArrayType[], callback:any):any {
 //     let filterArr:coursesArrayType[] = [];
 //     for (const item of array) {
 //         if (callback(item)) {
@@ -254,5 +254,5 @@
 //     return filterArr;
 // }
 //
-// console.log(courseFinder(coursesArray, (item:coursesArrayType)=>item.modules.includes('sass')))
-// console.log(courseFinder(coursesArray, (item:coursesArrayType)=>item.modules.includes('docker')))
+// console.log(courseFinder(coursesArray, (item:coursesArrayType):boolean=>item.modules.includes('sass')))
+// console.log(courseFinder(coursesArray, (item:coursesArrayType):boolean=>item.modules.includes('docker')))

@@ -1,7 +1,7 @@
 // ================================task-#y7crMeFwHcS====================================
 
 
-// for (let i = 0; i < 10; i++){
+// for (let i:number = 0; i < 10; i++){
 //   document.write(`
 //     <div> qwerty </div>
 //   `)
@@ -11,7 +11,7 @@
 // ================================task-#TYj7ncx====================================
 
 
-// for (let i = 0; i < 10; i++){
+// for (let i:number = 0; i < 10; i++){
 //   document.write(`
 //   <div>${i + 1} - qwerty</div>
 //   `)
@@ -129,15 +129,15 @@
 //         console.log(user.name, user.age)
 //     }
 // }
-// console.log('========Users with status false=========')
+// console.log('========Users with status true=========')
 // for (let user of users) {
-//     if (user.status<1) {
+//     if (user.status) {
 //         console.log(user.name, user.status)
 //     }
 // }
-// console.log('========Users with status true=========')
+// console.log('========Users with status false=========')
 // for (let user of users) {
-//     if (user.status>0) {
+//     if (!user.status) {
 //         console.log(user.name, user.status)
 //     }
 // }

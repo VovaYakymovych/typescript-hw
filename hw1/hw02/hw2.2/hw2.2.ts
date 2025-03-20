@@ -140,8 +140,8 @@
 // ======================================task-10=============================================
 
 
-// let a = +prompt('Введіть число a');
-// let b = +prompt('Введіть число b');
+// let a:number = 5
+// let b:number = 8;
 //
 // if (a>b){
 //   console.log('a', a)
@@ -156,7 +156,7 @@
 
 // ======================================task-11=============================================
 
-// let x = "";
+// let x:string = "";
 //
 // x = x || 'default';
 // console.log(x)
@@ -164,12 +164,12 @@
 
 // ======================================task-12=============================================
 
-// type coursesAndDurationArrayType ={
+// type coursesAndDurationArrayType1 ={
 //   title:string
 //   monthDuration:number
 // }
 //
-// let coursesAndDurationArray:coursesAndDurationArrayType[] = [
+// let coursesAndDurationArray1:coursesAndDurationArrayType1[] = [
 //   {title: 'JavaScript Complex', monthDuration: 5},
 //   {title: 'Java Complex', monthDuration: 6},
 //   {title: 'Python Complex', monthDuration: 6},
@@ -178,30 +178,30 @@
 //   {title: 'Frontend', monthDuration: 4}
 // ];
 //
-// if (coursesAndDurationArray[0].monthDuration>5){
-//   console.log(coursesAndDurationArray[0].title, 'Супер!')
+// if (coursesAndDurationArray1[0].monthDuration>5){
+//   console.log(coursesAndDurationArray1[0].title, 'Супер!')
 // }
-// if (coursesAndDurationArray[1].monthDuration>5){
-//   console.log(coursesAndDurationArray[1].title, 'Супер!')
+// if (coursesAndDurationArray1[1].monthDuration>5){
+//   console.log(coursesAndDurationArray1[1].title, 'Супер!')
 // }
-// if (coursesAndDurationArray[2].monthDuration>5){
-//   console.log(coursesAndDurationArray[2].title, 'Супер!')
+// if (coursesAndDurationArray1[2].monthDuration>5){
+//   console.log(coursesAndDurationArray1[2].title, 'Супер!')
 // }
-// if (coursesAndDurationArray[3].monthDuration>5){
-//   console.log(coursesAndDurationArray[3].title, 'Супер!')
+// if (coursesAndDurationArray1[3].monthDuration>5){
+//   console.log(coursesAndDurationArray1[3].title, 'Супер!')
 // }
-// if (coursesAndDurationArray[4].monthDuration>5){
-//   console.log(coursesAndDurationArray[4].title, 'Супер!')
+// if (coursesAndDurationArray1[4].monthDuration>5){
+//   console.log(coursesAndDurationArray1[4].title, 'Супер!')
 // }
-// if (coursesAndDurationArray[5].monthDuration>5){
-//   console.log(coursesAndDurationArray[5].title, 'Супер!')
+// if (coursesAndDurationArray1[5].monthDuration>5){
+//   console.log(coursesAndDurationArray1[5].title, 'Супер!')
 // }
 
 
 
 // спрощена версія з forEach
 
-// coursesAndDurationArray.forEach(course =>{
+// coursesAndDurationArray1.forEach(course =>{
 //   if (course.monthDuration > 5){
 //     console.log('Супер!')
 //   }

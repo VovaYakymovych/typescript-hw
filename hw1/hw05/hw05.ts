@@ -1,47 +1,47 @@
 //===================================task - #I2XsG6f=======================================
 
 
-// let squareArea = (a,b) => a*b;
+// let squareArea = (a:number,b:number):number => a*b;
 // console.log('a*b=',squareArea(10,20))
 
 
 //===================================task - #ETGAxbEn8l=======================================
 
 
-// let circleArea = (r) => Math.PI*Math.pow(r,2)
+// let circleArea = (r:number):number => Math.PI*Math.pow(r,2)
 // console.log('Pi*r^2=',circleArea(15))
 
 
 //===================================task - #Mbiz5K4yFe7=======================================
 
 
-// let cylinderArea = (r,h) => Math.PI*r*h*2
+// let cylinderArea = (r:number,h:number):number => Math.PI*r*h*2
 // console.log('2Pi*r*h =',cylinderArea(15,25))
 
 
 //===================================task - #SIdMd0hQ=======================================
 
 
-// let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+// let listOfItems:string[] = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 //
-// let listCout = (list) => {for (let listElement of list) {console.log(listElement)} }
+// let listCout = (list:string[]):void => {for (let listElement of list) {console.log(listElement)} }
 // listCout(listOfItems)
 
 
 //===================================task - #59g0IsA=======================================
 
 
-// let paragraph = (par) => document.write(`<p>${par}</p>`)
+// let paragraph = (par:string):void => document.write(`<p>${par}</p>`)
 //
 // paragraph('Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' +
 //      'Deleniti dolor exercitationem magnam quibusdam. Accusantium autem fuga fugit itaque ' +
 //      'minima pariatur rem rerum. Deleniti minima, vero.')
-
-
-//===================================task - #hOL6126=======================================
-
-
-// let createUl = (text) => document.write(`
+//
+//
+// //===================================task - #hOL6126=======================================
+//
+//
+// let createUl = (text:string):void => document.write(`
 //            <ul>
 //              <li>${text}</li>
 //             <li>${text}</li>
@@ -56,9 +56,9 @@
 //===================================task - #0Kxco1edSN=======================================
 
 
-// let createUl_v2 = (text,li_count) => {
+// let createUl_v2 = (text:string,li_count:number):void => {
 //     document.write(`<ul>`)
-//          for (let i = 0; i<li_count; i++){
+//          for (let i:number = 0; i<li_count; i++){
 //              document.write(`<li>${text}</li>`)
 //          }
 //      document.write(`</ul>`)
@@ -70,23 +70,23 @@
 //===================================task - #gEFoxMMO=======================================
 
 
-// let createUl_v3 =(list) =>{
+// let createUl_v3 =(list:(string|number|boolean)[]):void =>{
 //     document.write(`<ul>`)
 //         for (let i = 0; i<list.length; i++){
-//             let listElement = list[i]
+//             let listElement:string|number|boolean = list[i]
 //             document.write(`<li>${listElement}</li>`)
 //         }
 //     document.write(`</ul>`)
 // }
 //
-// let lst = [true, 3, 'a', false, 123, 65, 'qwe', 'asd', true, 1]
+// let lst:(string|number|boolean)[] = [true, 3, 'a', false, 123, 65, 'qwe', 'asd', true, 1]
 // createUl_v3(lst)
 
 
 //===================================task - #bovDJDTIjt=======================================
 
 
-// let arrCout = (arr) => {
+// let arrCout = (arr:any[]):void => {
 //     for (let arrElement of arr) {
 //         document.write(`
 //         <div class = "people">
@@ -97,8 +97,12 @@
 //         `)
 //     }
 // }
-//
-// let people = [
+// type peopleType ={
+//     id:number
+//     name:string
+//     age:number
+// }
+// let people:peopleType[] = [
 //     { id: 1, name: "Олександр", age: 25 },
 //     { id: 2, name: "Марія", age: 30 },
 //     { id: 3, name: "Іван", age: 22 },
@@ -116,7 +120,7 @@
 //===================================task - #pghbnSB=======================================
 
 
-// let returnMin = (list) =>{
+// let returnMin = (list:number[]):number =>{
 //     let min = list[0];
 //     for (let i = 0; i < list.length; i++) {
 //         if (list[i] < min) {
@@ -126,39 +130,39 @@
 //     return min;
 // }
 //
-// let num =[11, 12, -2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let num:number[] =[11, 12, -2, 3, 4, 5, 6, 7, 8, 9, 10]
 // console.log(returnMin(num))
 
 
 //===================================task - #EKRNVPM=======================================
 
 
-// let sumArr = (list) => {
-//     let sum = 0
-//     for (let i = 0; i < list.length; i++){
+// let sumArr = (list:number[]):number => {
+//     let sum:number = 0
+//     for (let i:number = 0; i < list.length; i++){
 //         sum +=list[i]
 //     }
 //     return sum
 // }
 //
-// let num =[11, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let num:number[] =[11, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // console.log(sumArr(num))
 
 
 //===================================task - #kpsbSQCt2Lf=======================================
 
 
-// let swapElements = (list, index1, index2) => {
-//     for (let i = 0; i < list.length; i++) {
+// let swapElements = (list:number[], index1:number, index2:number):void => {
+//     for (let i:number = 0; i < list.length; i++) {
 //             if (i === index1) {
-//                 let a = list[i];
+//                 let a:number = list[i];
 //                 list[i] = list[index2];
 //                 list[index2] = a;
 //                 break;
 //             }
 //     }}
 //
-// let num =[11, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let num:number[] =[11, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // swapElements(num, 0, 1)
 // console.log(num)
 

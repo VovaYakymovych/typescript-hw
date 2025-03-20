@@ -76,7 +76,7 @@
 
 // function createUl_v2(text:string,li_count:number):void{
 //     document.write(`<ul>`)
-//         for (let i = 0; i<li_count; i++){
+//         for (let i:number = 0; i<li_count; i++){
 //             document.write(`<li>${text}</li>`)
 //         }
 //     document.write(`</ul>`)
@@ -139,8 +139,8 @@
 //===================================task - #pghbnSB=======================================
 
 // function returnMin(list:number[]):number{
-//     let min = list[0];
-//     for (let i = 0; i < list.length; i++) {
+//     let min:number = list[0];
+//     for (let i:number = 0; i < list.length; i++) {
 //         if (list[i] < min) {
 //             min = list[i];
 //         }
@@ -156,14 +156,14 @@
 
 
 // function sumArr(list:number[]):number{
-//     let sum = 0
-//     for (let i = 0; i < list.length; i++){
+//     let sum:number = 0
+//     for (let i:number = 0; i < list.length; i++){
 //         sum +=list[i]
 //     }
 //     return sum
 // }
 //
-// let num =[11, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let num:number[] =[11, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // console.log(sumArr(num))
 
 
@@ -172,9 +172,9 @@
 
 // function swapElements(list:number[], index1:number, index2:number):void {
 //
-//         for (let i = 0; i < list.length; i++) {
+//         for (let i:number = 0; i < list.length; i++) {
 //             if (i === index1) {
-//                 let a = list[i];
+//                 let a:number = list[i];
 //                 list[i] = list[index2];
 //                 list[index2] = a;
 //                 break;
@@ -190,11 +190,11 @@
 //===================================task - #mkGDenYnNjn=======================================
 
 
-// function currencyExchange(){
+// function currencyExchange():string{
 //
-//     let currency1 = prompt('Choose your currency(UAH, USD, EUR)').toUpperCase();
+//     let currency1:string|null = prompt('Choose your currency(UAH, USD, EUR)').toUpperCase();
 //     let sum_currency1 = +prompt('Enter Amount');
-//     let currency2 = prompt('Choose currency you want to get(UAH, USD, EUR)').toUpperCase();
+//     let currency2:string|null = prompt('Choose currency you want to get(UAH, USD, EUR)').toUpperCase();
 //
 //     let exchangeRates = {
 //         UAH: { USD: 1 / 42, EUR: 1 / 44, UAH: 1 },

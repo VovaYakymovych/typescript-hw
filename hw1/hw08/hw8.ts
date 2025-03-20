@@ -1,7 +1,7 @@
 // ==================================task #AiN5CoUQ======================================
 
 
-function objectCopier(object:any) {
+function objectCopier(object:any):any {
 
     if (object) {
         let copiedFunctions:any = []
@@ -12,7 +12,7 @@ function objectCopier(object:any) {
             }
         }
 
-        let copiedObj = JSON.parse(JSON.stringify(object))
+        let copiedObj:any = JSON.parse(JSON.stringify(object))
         for (let func of copiedFunctions) {
             copiedObj[func.item] = func.copiedFunc
         }
@@ -31,16 +31,16 @@ type userType ={
 
 let user:userType = {
     name: 'John', surname: 'Doe', skills: ['Html/Css', 'JS', 'Python', 'C++'],
-    greeting() {
+    greeting():void {
         console.log(`Hello World!, my name is ${user.name}`)
     },
-    showSkills() {
+    showSkills():void {
         console.log(`My skills are: ${user.skills}`)
     }
 }
 console.log(user);
 
-let user2 = objectCopier(user)
+let user2:any = objectCopier(user)
 console.log(user2)
 user2.showSkills()
 
