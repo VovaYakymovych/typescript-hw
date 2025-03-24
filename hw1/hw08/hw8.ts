@@ -21,6 +21,7 @@ function objectCopier(object:any):any {
     throw new Error('Something went wrong')
 }
 
+
 type userType ={
     name:string
     surname:string
