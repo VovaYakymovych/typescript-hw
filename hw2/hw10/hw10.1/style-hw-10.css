@@ -1,0 +1,183 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.buttonTask1 {
+    height: 100px;
+    width: 250px;
+    margin: 15px;
+    background-color: #5e9a9c;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+.buttonTask1:active {
+    color: #9db89d;
+}
+
+.buttonTask1:hover {
+    background-color: #54888a;
+    scale: 1.02;
+    transition: 0.3s;
+}
+
+
+/*==================================*/
+
+#formAge {
+    margin: 30px;
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formInput {
+    height: 35px;
+    width: 150px;
+    padding-left: 10px;
+
+    border-radius: 8px;
+    border: none;
+
+    background-color: #82b4b6;
+    color: aliceblue;
+}
+
+.formInput::placeholder {
+    color: aliceblue;
+}
+
+.formButton {
+    height: 35px;
+    width: 80px;
+    border-radius: 8px;
+    border: none;
+    color: aliceblue;
+    background-color: #5e9a9c;
+    transition: 0.3s;
+}
+
+.formButton:hover {
+    background-color: #54888a;
+    scale: 1.02;
+    transition: 0.3s;
+}
+
+#ageWarning {
+    margin: 0 0 30px 30px;
+    color: red;
+    font-size: 0.7rem;
+}
+
+
+/*==================================*/
+
+
+.form-style-preset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 160px;
+    margin: 30px;
+}
+
+#userDataBlock {
+    width: 150px;
+    padding: 10px;
+    margin: 30px;
+
+    border-radius: 8px;
+    border: none;
+
+    background-color: #82b4b6;
+    color: aliceblue;
+}
+
+/*==================================*/
+
+#counter {
+    margin: 30px;
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+
+    border-radius: 8px;
+    border: none;
+
+    background-color: #82b4b6;
+    color: aliceblue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*==================================*/
+
+#kgInput{
+    margin: 30px;
+}
+#result{
+    height: 35px;
+    width: 150px;
+    padding-left: 10px;
+    margin-left: 30px;
+
+    font-size: 0.7rem;
+
+    border-radius: 8px;
+    border: none;
+
+    background-color: #82b4b6;
+    color: aliceblue;
+
+    display: flex;
+    align-items: center;
+}
+
+/*==================================*/
+
+#tableForm{
+    width: 210px;
+}
+#tableForm input {
+    width: 200px;
+}
+.cell{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+/*==================================*/
+
+#container {
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+.item {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.buttons button {
+    padding: 10px;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+}
